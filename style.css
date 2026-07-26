@@ -1,0 +1,71 @@
+body {
+  background-color: black;
+  font-family: system-ui;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+}
+
+.input {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  align-items: center;
+  padding-bottom: 45px;
+}
+
+.add {
+  background-color: rgb(9, 131, 9);
+  font-size: 25px;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  grid-column: 3;
+}
+
+input {
+  font-size: 18px;
+  width: 100%;
+  max-width: 600px;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  text-align: center;
+  grid-column: 2;
+  justify-self: center;
+}
+
+input::placeholder {
+  opacity: 0.9;
+}
+
+p {
+  color: white;
+}
+
+.todolist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+}
+.list {
+  grid-column: 2;
+  justify-self: center;
+  text-align: center;
+  color: white;
+  background-color: rgb(64, 64, 184);
+  width: 100%;
+  max-width: 680px;
+  height: fit-content;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 20px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
