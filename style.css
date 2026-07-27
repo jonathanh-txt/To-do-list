@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   font-family: system-ui;
 }
 
@@ -50,8 +50,9 @@ p {
 }
 
 .todolist {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   row-gap: 20px;
 }
 .list {
@@ -65,7 +66,34 @@ p {
   height: fit-content;
   padding: 20px;
   font-size: 20px;
-  border-radius: 20px;
+  border-radius: 16px;
   word-wrap: break-word;
   overflow-wrap: break-word;
+}
+
+.delbutton {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(249, 68, 68);
+
+  border: none;
+  border-radius: 8px;
+}
+
+.imgDel {
+  width: 28px;
+  height: 28px;
+}
+
+.divdelbutton {
+  width: 40px;
+  height: 40px;
+  grid-column: 3;
+}
+
+.todoitem {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 30px;
 }
