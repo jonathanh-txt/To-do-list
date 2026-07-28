@@ -3,6 +3,24 @@ body {
   font-family: system-ui;
 }
 
+.stat {
+  display: flex;
+}
+
+#donecount {
+  padding-left: 10px;
+}
+
+.icon {
+  background-color: rgb(249, 250, 249);
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  margin: 15px;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -16,17 +34,6 @@ body {
   column-gap: 20px;
   align-items: center;
   padding-bottom: 45px;
-}
-
-.add {
-  background-color: rgb(9, 131, 9);
-  font-size: 25px;
-  color: white;
-  width: 50px;
-  height: 50px;
-  border: none;
-  border-radius: 10px;
-  grid-column: 3;
 }
 
 input {
@@ -45,6 +52,17 @@ input::placeholder {
   opacity: 0.9;
 }
 
+.add {
+  background-color: rgb(9, 131, 9);
+  font-size: 25px;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  grid-column: 3;
+}
+
 p {
   color: white;
 }
@@ -55,6 +73,36 @@ p {
   flex-direction: column;
   row-gap: 20px;
 }
+
+.todoitem {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 680px) 40px;
+  column-gap: 20px;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.divdonebutton {
+  width: 40px;
+  height: 40px;
+  grid-column: 1;
+}
+
+.donebutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(18, 196, 42);
+  border: none;
+  border-radius: 8px;
+}
+
+.imgdonebutton {
+  width: 28px;
+  height: 28px;
+}
+
 .list {
   grid-column: 2;
   justify-self: center;
@@ -69,20 +117,7 @@ p {
   border-radius: 16px;
   word-wrap: break-word;
   overflow-wrap: break-word;
-}
-
-.delbutton {
-  width: 40px;
-  height: 40px;
-  background-color: rgb(249, 68, 68);
-
-  border: none;
-  border-radius: 8px;
-}
-
-.imgDel {
-  width: 28px;
-  height: 28px;
+  box-sizing: border-box;
 }
 
 .divdelbutton {
@@ -91,9 +126,16 @@ p {
   grid-column: 3;
 }
 
-.todoitem {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 20px;
-  column-gap: 30px;
+.delbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(249, 68, 68);
+  border: none;
+  border-radius: 8px;
+}
+
+.imgdelbutton {
+  width: 28px;
+  height: 28px;
 }
