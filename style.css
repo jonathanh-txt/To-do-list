@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 35);
   font-family: system-ui;
 }
 
@@ -62,6 +62,9 @@ input::placeholder {
   border-radius: 10px;
   grid-column: 3;
 }
+.add:hover {
+  border: 2px solid rgb(245, 235, 235);
+}
 
 p {
   color: white;
@@ -93,9 +96,15 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(18, 196, 42);
+  background-color: rgb(18, 196, 42, 0.6);
   border: none;
   border-radius: 8px;
+  border: 2px solid rgb(31, 198, 25);
+}
+
+.donebutton:hover {
+  background-color: rgb(18, 196, 42, 1);
+  border: 2px solid rgb(245, 235, 235);
 }
 
 .imgdonebutton {
@@ -130,11 +139,14 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(249, 68, 68);
-  border: none;
+  background-color: rgba(243, 61, 61, 0.6);
+  border: 2px solid rgb(255, 22, 22);
   border-radius: 8px;
 }
-
+.delbutton:hover {
+  background-color: rgba(243, 61, 61, 1);
+  border: 2px solid rgb(245, 235, 235);
+}
 .imgdelbutton {
   width: 28px;
   height: 28px;
