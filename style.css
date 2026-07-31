@@ -47,6 +47,12 @@ textarea {
   grid-column: 2;
   justify-self: center;
   text-align: center;
+  padding: 14px 15px;
+  box-sizing: border-box;
+  font-size: 18px;
+  resize: none;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 textarea::placeholder {
@@ -109,6 +115,7 @@ p {
 .donebutton:hover {
   background-color: rgb(18, 196, 42, 1);
   border: 2px solid rgb(245, 235, 235);
+  box-shadow: 0px 2px 6px rgb(210, 186, 186);
 }
 
 .imgdonebutton {
@@ -150,6 +157,7 @@ p {
 .delbutton:hover {
   background-color: rgba(243, 61, 61, 1);
   border: 2px solid rgb(245, 235, 235);
+  box-shadow: 0px 2px 6px rgb(210, 186, 186);
 }
 .imgdelbutton {
   width: 28px;

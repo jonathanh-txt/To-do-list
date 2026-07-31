@@ -55,3 +55,10 @@ addButton.addEventListener("click", function () {
     });
   }
 });
+
+input.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault(); // mencegah textarea membuat baris baru
+    addButton.click(); // menekan tombol Add secara otomatis
+  }
+});
